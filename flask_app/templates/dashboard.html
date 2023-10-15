@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/style.css') }}">
+    <script defer src="static/script.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="d-flex justify-content-around  nav2">
+        <h2 class="custom-border-top text-left p-2 mx-5"> Hi {{user.first_name}}!  Welcome To Your Profile. </h2>
+        <a href="/community" class="posts_title btn btn-warning btn-outline-dark mt-1" onmouseover="addShadow(this)">Community</a href>
+        <a href="/myMessages" class="posts_title btn btn-warning btn-outline-dark mt-1" onmouseover="addShadow(this)">Messages</a href>
+        <a href="/allPosts" class="posts_title btn btn-warning btn-outline-dark mt-1" onmouseover="addShadow(this)">All Posts</a href>
+        <a href='/logout' class="">Logout</a>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="container col-10 dashboard_info">
+            <div class="mb-2">
+                <label for="formFile" class="form-label"><em>Upload Profile Pic Here</label></em>
+                <input class="form-control w-100" style="border:none" type="file" id="formFile">
+            </div>
+            <br>
+            <table class="text-dark table table-secondary table-hover" style="border-bottom: black;">
+                <thead>
+                    <tr>
+                        <th scope="col">Native Tongue:</th>
+                        <th scope="col">Fluent In:</th>
+                        <th scope='col'>Learning:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="col">{{languages.native_tongue}}</td>
+                        <td scope="col">{{languages.fluent_in}}</td>
+                        <td scope="col">{{languages.learning}}<td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <form action="/about_me" method="post" class="p-3 mx-auto my-5 bg-dark text-light">
+            <div class="form-group">
+                <label for="social_media"> Social Media Links</label>
+                <input type="text" name="social_media" id="social_media" value = "{{user.social_media}}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="bio">Biography </label>
+                <input type="text" name="bio" id="bio" value = "{{user.bio}}" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-warning btn-outline-dark">Submit Bio</button>
+        </form>
+        <div class="container col-10">
+            <form action="/about_my_goals" method="post" class="p-3 mx-auto my-5 bg-dark text-light">
+                <div class="mb-3 mx-5">
+                    <label for="goal_content" class="form-label">Create and Save your Language Goals in Your Bio!</label>
+                    <textarea class="form-control" name="goal_content" id="goal_content" rows="5" placeholder="{{user.goal_content}}"></textarea>
+                </div>
+                <input type="submit" value="Update Goals!" class="m-1 p- btn btn-warning btn-outline-dark">
+            </form>
+        </div>
+        <div class="container col-10">
+            <form action="/post_message" method="post" class="p-3 mx-auto my-5 bg-dark text-light">
+            {% with messages = get_flashed_messages(category_filter=['post']) %}
+                {% if messages %}
+                <div class="alert alert-warning" role="alert">
+                    <h2> Invalid Post below, must not be blank. Please include relevant material. </h2>
+                    <ul>
+                    {% for message in messages %}
+                        <li>{{message}}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            {% endwith %}
+                <div class="mb-3 mx-5">
+                    <label for="exampleFormControlTextarea1" class="form-label">Share a Post to the Collective Page!</label>
+                    <textarea class="form-control" name="content" id="content" rows="5" placeholder="What's On Your Mind?"></textarea>
+                    <input type="submit" value="Submit Post!" class=" m-1 p- btn btn-warning btn-outline-dark">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

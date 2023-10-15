@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/style.css') }}">
+    <script defer src="static/script.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="d-flex justify-content-around nav2">
+        <h2 class="custom-border-top text-left p-2 mx-2"> My Inbox </h2>
+        <a href="/dashboard" class="posts_title btn btn-warning btn-outline-dark mt-1" onmouseover="addShadow(this)">Back to Dashboard</a href>
+        <a href="/allPosts" class="posts_title btn btn-warning btn-outline-dark mt-1" onmouseover="addShadow(this)">All Posts</a href>
+        <a href="/community" class="posts_title btn btn-warning btn-outline-dark mt-1" onmouseover="addShadow(this)">Community</a href>
+        <a href='/logout' class="">Logout</a>
+    </div>
+    <br>
+        <div class="container-fluid">
+            <div class="container col-12">
+                <h4 class="custom-border-top text-center mx-2"> Received Messages </h4><br>
+                {% with messages = get_flashed_messages(category_filter=['message']) %}
+                    {% if messages %}
+                    <div class="alert alert-warning" role="alert">
+                        <h2> Content needed </h2>
+                        <ul>
+                        {% for message in messages %}
+                            <li>{{message}}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                {% endwith %}
+                <table class="table table-dark table-hover mx-5">
+                    <thead>
+                        <tr>
+                            <th scope="col">From</th>
+                            <th scope="col">Sent On</th>
+                            <th scope='col'>Message content</th>
+                            <th scope='col'>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for one_message in messages %}
+                        <tr>
+                            <td>{{one_message.sender.first_name}} {{one_message.sender.last_name}}
+                            <td>{{one_message.created_at.strftime(dtformat)}}
+                            <td>{{one_message.content}}
+                            <td><a href="/sendMessage/{{one_message.sender.id}}">Message | <a href="/delete_message/{{one_message.id}}">Delete</a>
+                        {% endfor %}
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+* {
+    margin: 0px auto;
+    max-width: 1350px;
+}
+
+.nav {
+    border-radius: 50%;
+}
+
+.navWords {
+    margin: 20px auto;
+}
+
+.nav2 {
+    background-color: rgba(211, 211, 211, 0.977);
+    padding: 10px 15px;
+    border-bottom: 1px solid black;
+}
+
+.headers {
+    text-decoration:underline;
+}
+
+.dashboard_info{
+    display: flex;
+    text-align: center;
+    padding: 5px;
+}

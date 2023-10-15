@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/style.css') }}">
+    <script defer src="static/script.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="d-flex justify-content-around nav2">
+        <h2 class="custom-border-top text-left p-2 mx-5"> See what's going on in your community {{user.first_name}}! </h2>
+        <a href="/community" class="posts_title btn btn-warning btn-outline-dark mt-1" onmouseover="addShadow(this)">Community</a href>
+        <a href="/dashboard" class="posts_title btn btn-warning btn-outline-dark mt-1" onmouseover="addShadow(this)">Profile</a href>
+        <a href='/logout' class="">Logout</a>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="container col-12">
+            <h2 class="text-center p-3 mx-5 headers"> All Community Posts </h2><br>
+            <table class="table table-dark mx-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Posted On</th>
+                        <th scope='col'>Post</th>
+                        <th scope='col'>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for post in all_posts %}
+                    <tr>
+                        <td>{{post.creator.first_name}} {{post.creator.last_name}}
+                        <td>{{post.created_at.strftime(dtformat)}}
+                        <td>{{post.content}}
+                        <td><a href="/sendMessage/{{post.user_id}}">Message</td>
+                    {% if user.id == post.user_id %}
+                        <td> <a href="/delete_post/{{ post.id }}" class="p-5">Delete</a>
+                    {% endif %}
+                {% endfor %}
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

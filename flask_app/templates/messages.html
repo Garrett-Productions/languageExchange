@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/style.css') }}">
+    <script defer src="static/script.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="d-flex justify-content-around nav2">
+        <h2 class="custom-border-top text-left p-2 mx-5"> Connect! </h2>
+        <a href="/community" class="posts_title btn btn-warning btn-outline-dark mt-1" onmouseover="addShadow(this)">Community</a href>
+        <a href="/myMessages" class="posts_title btn btn-warning btn-outline-dark mt-1" onmouseover="addShadow(this)">Messages</a href>
+        <a href="/allPosts" class="posts_title btn btn-warning btn-outline-dark mt-1" onmouseover="addShadow(this)">All Posts</a href>
+        <a href='/logout' class="">Logout</a>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="container col-10 p-3">
+            <form action="/createMessage" method="post">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Send message to {{receiver.first_name}}</label>
+                </div>
+                <div class="form-floating">
+                {% with messages = get_flashed_messages(category_filter=['message']) %}
+                    {% if messages %}
+                    <div class="alert alert-warning" role="alert">
+                        <h2> Please Include content In Your message </h2>
+                        <ul>
+                        {% for message in messages %}
+                            <li>{{message}}</li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                {% endwith %}
+                    <textarea class="form-control" placeholder="Write Your Message here" name="content" style="height: 100px"></textarea>
+                    <input type="hidden" name="receiver_id" value="{{receiver.id}}">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Send message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
