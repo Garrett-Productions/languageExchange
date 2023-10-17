@@ -9,4 +9,4 @@ Language Exchange Ideas and upgrades
 7. Mobile first with responsiveness. Major
 8. Render flask on front end with tailwind animations
 9. Use animista 
-10. Python Icons // 
+10. Python Icons 
