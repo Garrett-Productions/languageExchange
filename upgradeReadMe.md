@@ -10,3 +10,7 @@ Language Exchange Ideas and upgrades
 8. Render flask on front end with tailwind animations
 9. Use animista 
 10. Python Icons 
+
+
+
+Chat App Idea
