@@ -38,3 +38,4 @@ BIG STEPS
 
 
 Ideas for UI in Prep for wireframe and build
+* List of Front end heavy projects to reference:
