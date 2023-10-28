@@ -44,3 +44,9 @@ Ideas for UI in Prep for wireframe and build
     DiveShop(mobile friendly layout)
     Example site with META, (easy desktop layout)
     Recipes-Thought Dashboard-Cars
+
+Templates thus far
+    Login and reg
+    creation page if registering 
+    profile page
+    community page
