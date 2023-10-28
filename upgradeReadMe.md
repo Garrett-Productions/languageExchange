@@ -20,3 +20,7 @@ Chat App Idea
 10/27 Notes
 - re wire-frame first
 * Goal is to deploy and be professional.
+* The Project 
+1. group chat room capabilities with functionality to be able to drop a chat room and get into another one.
+2. API info from a language teacher, maybe world news, or language API - reserach langauge API functionality
+3. I want to incorpororate all joins that I've done in all my exams in one way or other. Ill keep redoing my DB idc, I'll ensure I pinpoint each one in the wireframe itself
