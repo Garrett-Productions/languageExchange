@@ -29,3 +29,4 @@ Chat App Idea
 
 BIG STEPS
 1. Rebuild wireframe
+2. Watch 2 tutorials, First: Socket.io with flask & mysql
