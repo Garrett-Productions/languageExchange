@@ -53,4 +53,7 @@ Templates thus far
     all posts page
     messages page
     private message page
-    : 7 template thus far 
+    : 7 template thus far
+
+
+Im praying for myself
