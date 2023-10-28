@@ -28,3 +28,4 @@ Chat App Idea
 5. Im gonna need to find API videos with SQL, maybe watch an AJAX tutorial first.
 
 BIG STEPS
+1. Rebuild wireframe
