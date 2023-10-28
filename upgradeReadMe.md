@@ -50,3 +50,7 @@ Templates thus far
     creation page if registering 
     profile page
     community page
+    all posts page
+    messages page
+    private message page
+    : 7 template thus far 
