@@ -31,11 +31,15 @@ BIG STEPS
 1. Rebuild wireframe(where all my joins and chat rooms are laid out)
 2. Watch 2 tutorials, First: Socket.io with flask & mysql... Second: later on, AJAX and API's(platform)
 3. Profile Picture capability
-3. Refactor build with TailwindCSS.
-4. Start building brother
-5. Deploy as biggest project to date.
-6. Maintain on AWS and keep open source
+4. Refactor build with TailwindCSS.
+5. Build a nice Login and Reg
+6. Start building brother
+7. Deploy as biggest project to date.
+8. Maintain on AWS and keep open source
 
 
 Ideas for UI in Prep for wireframe and build
 * List of Front end heavy projects to reference:
+    Modernai-gt(mobile friendly layout)
+    DiveShop(mobile friendly layout)
+    Example site with META, (easy desktop layout)
