@@ -35,3 +35,6 @@ BIG STEPS
 4. Start building brother
 5. Deploy as biggest project to date.
 6. Maintain on AWS and keep open source
+
+
+Ideas for UI in Prep for wireframe and build
