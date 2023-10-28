@@ -31,4 +31,6 @@ BIG STEPS
 1. Rebuild wireframe(where all my joins and chat rooms are laid out)
 2. Watch 2 tutorials, First: Socket.io with flask & mysql... Second: later on, AJAX and API's(platform)
 3. Refactor build with TailwindCSS.
-4. Start buildin brother
+4. Start building brother
+5. Deploy as biggest project to date.
+6. Maintain on AWS and keep open source
