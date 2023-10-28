@@ -24,3 +24,7 @@ Chat App Idea
 1. group chat room capabilities with functionality to be able to drop a chat room and get into another one.
 2. API info from a language teacher, maybe world news, or language API - reserach langauge API functionality
 3. I want to incorpororate all joins that I've done in all my exams in one way or other. Ill keep redoing my DB idc, I'll ensure I pinpoint each one in the wireframe itself
+4. Watch a socket.io tutorial with flask and mysql, and the n from there incorporare socket into my language exchange 
+5. Im gonna need to find API videos with SQL, maybe watch an AJAX tutorial first.
+
+BIG STEPS
