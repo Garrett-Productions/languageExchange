@@ -29,5 +29,5 @@ Chat App Idea
 
 BIG STEPS
 1. Rebuild wireframe(where all my joins and chat rooms are laid out)
-2. Watch 2 tutorials, First: Socket.io with flask & mysql
+2. Watch 2 tutorials, First: Socket.io with flask & mysql... Second: later on, AJAX and API's(platform)
 3. 
