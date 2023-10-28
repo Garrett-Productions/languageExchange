@@ -28,5 +28,6 @@ Chat App Idea
 5. Im gonna need to find API videos with SQL, maybe watch an AJAX tutorial first.
 
 BIG STEPS
-1. Rebuild wireframe
+1. Rebuild wireframe(where all my joins and chat rooms are laid out)
 2. Watch 2 tutorials, First: Socket.io with flask & mysql
+3. 
