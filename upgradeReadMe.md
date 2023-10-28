@@ -16,3 +16,5 @@ Language Exchange Ideas and upgrades
 Chat App Idea
 1. I could follow this 2 week, video a day tutrrial and deploy a MERN chat app. That would be huge, give me a great experience incorporating Socket.io with MERN
 2. Then go create it in my language with Flask.
+
+hey
