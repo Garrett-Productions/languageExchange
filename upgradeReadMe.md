@@ -64,3 +64,4 @@ https://web.speaky.com/profile
 10/31 
 1. spooky wireframing
 2. watching flask and socket tutoriall
+*Complexity is the enemy of execution, keep it simple, the more complex something is the harder it is to do
