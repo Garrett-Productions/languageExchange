@@ -57,4 +57,6 @@ Templates thus far
 
 
 UI Examples
-https://web.speaky.com/profile
+https://web.speaky.com/profile 
+
+Critiques of today lets goooo
