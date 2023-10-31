@@ -53,7 +53,8 @@ Templates thus far
     all posts page
     messages page
     private message page
-    : 7 template thus far
+    Sockets - Chat portion
+    : 8 template thus far
 
 
 UI Examples
