@@ -59,4 +59,6 @@ Templates thus far
 UI Examples
 https://web.speaky.com/profile 
 
-Critiques of today lets goooo
+
+10/31 
+1. spooky wireframing
