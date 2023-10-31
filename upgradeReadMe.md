@@ -65,3 +65,4 @@ https://web.speaky.com/profile
 1. spooky wireframing
 2. watching flask and socket tutoriall
 *Complexity is the enemy of execution, keep it simple, the more complex something is the harder it is to do
+* Im getting close to having my MVP, Im going to keep my DM'ing system, and make it pop with sockets, but also chat rooms
