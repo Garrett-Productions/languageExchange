@@ -62,3 +62,4 @@ https://web.speaky.com/profile
 
 10/31 
 1. spooky wireframing
+2. watching flask and socket tutorial 
