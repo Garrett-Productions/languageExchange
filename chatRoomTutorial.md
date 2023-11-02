@@ -17,3 +17,6 @@ OVERVIEW OF WATCHTHROUGH
 - we are time stamping our messages, and can prob create a cond to get rid of the timestamp if the browser has been refreshed
 - we are storing our messages in memory
 - In all, We aren't using that much JS, but I'm going to modularize it out in a script.src file
+
+Questions
+- do I need to save my chats in a database? I really just need to save them in the socket for that current chat room and session
