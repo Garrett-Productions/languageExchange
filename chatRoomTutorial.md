@@ -9,3 +9,4 @@ As of now we are exporting and importing html templates, like we are using react
 
 OVERVIEW OF WATCHTHROUGH
 - sockets wasnt intemidating, we can socket.on, socket.off and socket.emit
+- socket knows about 'connect' and 'disconnect'
