@@ -19,4 +19,4 @@ OVERVIEW OF WATCHTHROUGH
 - In all, We aren't using that much JS, but I'm going to modularize it out in a script.src file
 
 Questions
-- do I need to save my chats in a database? I really just need to save them in the socket for that current chat room and session
+- do I need to save my chats in a database, or what portions of the chat need to be saved in a DB? I really just need to save them in the socket for that current chat room and session
