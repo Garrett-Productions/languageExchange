@@ -13,3 +13,4 @@ OVERVIEW OF WATCHTHROUGH
 - we are writing a very basic algo to generate a room code for each code of length(4)
 - we are small kine passing error messages with jinja depending on the form error
 - we can are storing the room, and the name of the user in session, and we can session.clear in our function call
+- we are also deleting a chat room if there are no users
