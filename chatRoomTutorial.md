@@ -15,3 +15,4 @@ OVERVIEW OF WATCHTHROUGH
 - we can are storing the room, and the name of the user in session, and we can session.clear in our function call
 - we are also deleting a chat room if there are no users
 - we are time stamping our messages, and can prob create a cond to get rid of the timestamp if the browser has been refreshed
+- we are storing our messages in memory
