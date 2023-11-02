@@ -6,6 +6,7 @@ Installs
 
 As of now we are exporting and importing html templates, like we are using react, using the {% extends home.html%}
 
+https://www.youtube.com/watch?v=mkXdvs8H7TA
 
 OVERVIEW OF WATCHTHROUGH
 - sockets wasnt intemidating, we can socket.on, socket.off and socket.emit
