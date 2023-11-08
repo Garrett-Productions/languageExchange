@@ -72,4 +72,4 @@ https://web.speaky.com/profile
 
 Notes from 11/7 moving forward
 * I want to build the initial wireframe and focus on UI and then work to incorporate socket.io after I have my initial wireframe.
-* I'm going to make a readme for each component that will serve as an extension to my comments on my wireframe 
+* I'm going to make a readme for each component that will serve as an extension to my comments on my wireframe, especially the log reg, UI
