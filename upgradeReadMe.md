@@ -66,3 +66,9 @@ https://web.speaky.com/profile
 2. watching flask and socket tutoriall
 *Complexity is the enemy of execution, keep it simple, the more complex something is the harder it is to do
 * Im getting close to having my MVP, Im going to keep my DM'ing system, and make it pop with sockets, but also chat rooms
+
+
+11/7 and forward
+
+Notes from 11/7 moving forward
+* I want to build the initial wireframe and focus on UI and then work to incorporate socket.io after I have my initial wireframe.

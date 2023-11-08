@@ -22,5 +22,3 @@ OVERVIEW OF WATCHTHROUGH
 Questions
 - do I need to save my chats in a database, or what portions of the chat need to be saved in a DB? I really just need to save them in the socket for that current chat room and session
 
-Notes from 11/7 moving forward
-* I want to build the initial wireframe and focus on UI and then work to incorporate socket.io after I have my initial wireframe.
