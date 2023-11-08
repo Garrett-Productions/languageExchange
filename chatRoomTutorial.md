@@ -21,3 +21,5 @@ OVERVIEW OF WATCHTHROUGH
 
 Questions
 - do I need to save my chats in a database, or what portions of the chat need to be saved in a DB? I really just need to save them in the socket for that current chat room and session
+
+Notes from 11/7 moving forward
